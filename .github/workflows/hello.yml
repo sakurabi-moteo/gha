@@ -1,9 +1,9 @@
 name: Hello, World!
-on: [push]
+on: [pull_request]
 
 jobs:
   build:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, World!"
+      - run: echo "Hello, World!" | exit 1
